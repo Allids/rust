@@ -1,0 +1,20 @@
+"installscript"
+{
+	"Run Process"
+	{
+		"easyanticheat"
+		{
+			"HasRunKey"     "HKEY_LOCAL_MACHINE\\Software\\Valve\\Steam\\Apps\\rust_EAC"
+			"process 1"		"%INSTALLDIR%\\EasyAntiCheat\\EasyAntiCheat_Setup.exe"
+			"command 1"		"install 12 -console"
+		}
+	}
+	"Run Process On Uninstall"
+	{
+		"easyanticheat"
+		{
+			"process 1"		"%INSTALLDIR%\\EasyAntiCheat\\EasyAntiCheat_Setup.exe"
+			"command 1"		"uninstall 12 -console"
+		}
+	}
+}
